@@ -6,8 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Advisor.create(first_name: 'Janet', last_name: 'Snoyer', email: "janet@email.com", password: "password")
+Advisor.create(first_name: 'Janet', last_name: 'Snoyer', email: "janet@email.com", password: "password", :student_id => [2])
 Student.create(first_name: 'Laura', last_name: 'Darlak', email: 'laura@email.com', password: 'password')
+Student.create(first_name: 'Casey', last_name: 'Jones', email: 'caseya@email.com', password: 'password')
 
 School.create(name: 'Ithaca College', state: 'New York', mission: 'Go Bombers!')
 Essay.create(prompt: 'Prompt 1', word_count: 500, year: 2018)
