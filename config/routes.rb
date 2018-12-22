@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :students
-  devise_for :advisors
+  devise_for :students, controllers: { registrations: 'users/registrations'}
+
+  devise_for :advisors, controllers: { registrations: 'users/registrations'}
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root to: 'static#index'
